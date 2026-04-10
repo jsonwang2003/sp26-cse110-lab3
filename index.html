@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSE105 HW 1 Meeting</title>
+    <meta charset="UTF-8">
+    <link rel="icon">
+  </head>
+  <body>
+    <header>
+      <h1>CSE105 HW 1 Meeting</h1>
+      <h2>Homework Discussion</h2>
+      <h3>4/4/26</h3>
+      <hr>
+      <nav>
+        <a href="">Team formation</a><br>
+        <a href="">Question 3-4</a>
+      </nav>
+      <button>Previous Meeting</button>
+      <button>Next Meeting</button>
+      <hr>
+      <h1>Attendance List</h1>
+      <ul>
+        <li>Jason Wang</li>
+        <li>Andrew Le</li>
+        <li>Yezhi Wu</li>
+      </ul>
+      <h2><strong>Due on:</strong> Friday 4/10/26</h2>
+      <details>
+        <summary>HW 1 pdf</summary>
+        <embed src="CSE_105_Spring_2026_homework1.pdf" type="application/pdf" width="100%" height="600">
+      </details>
+    </header>
+    <hr>
+    <main>
+      <section>
+        <h1>Meeting Agenda</h1>
+        <div>
+          <h3>From Previous Meeting</h3>
+          <ol>
+            <li>Finish setting up <a href="https://github.com/jsonwang2003/CSE105_HW" target="_blank">Repository</a></li>
+          </ol>
+          <h3>Planed Agenda</h3>
+          <ol>
+            <li>Discuss Questions 1-2</li>
+            <li>Write up solutions in Repository</li>
+          </ol>
+          <h3>Next Meeting</h3>
+          <ul>
+            <li>Discuss Questions 3-4</li>
+            <li>Discuss Questions 5-6</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <h1>Homework</h1>
+            <h3>Question 1</h3>
+            <p>All expressions are over the alphabet $\Sigma=\{0,1\}$. For each expression $R$, provide:</p>
+            <ul>
+              <li>2 example strings in L(R)</li>
+              <li>2 example strings <b><strong>not in</strong></b> L(R)</li>
+              <li>A brief <i><em>English description</em></i> of L(R)</li>
+              <li>A simpler regular expresson R' where L(R') = L(R)</li>
+            </ul>
+            <h4><span>Expressions</span>: </h4>
+            <ol>
+              <li>Ra = 1 · ∅ · 0* ∪ 1* · ε · 0</li>
+              <li>Rb = ((00)* ∪ (11)*)* · (0* ∪ 1*)</li>
+              <li>Rc = (11 ∪ (00 ∪ (ε ∪ 00)))* 11*</li>
+            </ol>
+            <img src="1-1.jpg" alt="Question 1 part a, part b" width="600" height="800">
+            <img src="1-2.jpg" alt="Question 1 part c" width="600" height="800">
+          </div>
+          <hr>
+          <div>
+            <h3>Question 2</h3>
+            <p>Let <span>M</span> be the DFA with states <span>Q = {q₁, q₂, q₃, q₄, q₅}</span> <br>
+              , input alphabet <span>Σ = {u, d}</span> <br>
+              , start state <span>q₂</span> <br>
+              , and accept states <span>F = {q₂}</span>.
+            </p>
+            <table border="1" cellpadding="4" cellspacing="0">
+              <tr>
+                <th>δ</th>
+                <th>u</th>
+                <th>d</th>
+              </tr>
+              <tr>
+                <td>q₁</td>
+                <td>q₅</td>
+                <td>q₂</td>
+              </tr>
+              <tr>
+                <td>q₂</td>
+                <td>q₁</td>
+                <td>q₃</td>
+              </tr>
+              <tr>
+                <td>q₃</td>
+                <td>q₂</td>
+                <td>q₄</td>
+              </tr>
+              <tr>
+                <td>q₄</td>
+                <td>q₃</td>
+                <td>q₅</td>
+              </tr>
+              <tr>
+                <td>q₅</td>
+                <td>q₄</td>
+                <td>q₁</td>
+              </tr>
+            </table>
+            <h3>Tasks:</h3>
+            <ol>
+              <li>Give the computation for input <code>uududu</code>. Is it in <span>L(M)</span>?</li>
+              <li>Draw a state transition diagram.</li>
+              <li>Give 2 example strings of length ≥ 5 that are accepted.</li>
+              <li>Give 2 example strings of length ≥ 5 that are not accepted.</li>
+              <li>Provide a high-level English description of <span>M</span> (max 2 sentences).</li>
+            </ol>
+            <p><br></p>
+            <img src="2.jpg" alt="Question 2 part a-d" width="600" height="800">
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2>Media</h2>
+        <audio controls>
+          <source src="Kozoro   Curious (feat. Noctilucent)  Ninety9Lives release-Ninety9Lives-a67ab063211dfd9b87f8d98c14c54c9b.mp3" type="audio/mpeg">
+          Audio not supported
+        </audio><br>
+        <h1>Awesome Match in Soccer Video Game</h1>
+        <video width="800" height="auto" controls>
+          <source src="Screen_Recording_20260406_145609_FC Mobile.mp4" type="video/mp4">
+          Video not supported
+        </video>
+      </section>
+      <form>
+        <fieldset>
+          <legend>Short Form</legend>
+          <label for="full_name">Full Name:</label><br>
+          <input type="text" id="full_name"><br>
+          <hr>
+          <p>Favorite Language: </p>
+          <input type="radio" id="cpp" name="fav_language" value="C++">
+          <label for="cpp">C++</label><br>
+          <input type="radio" id="python" name="fav_language" value="Python">
+          <label for="python">Python</label><br>
+          <hr>
+          <p>Webdev experiences: </p>
+          <input type="checkbox" id="html" name="webdev_experience" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="checkbox" id="css" name="webdev_experience" value="CSS">
+          <label for="css">css</label><br>
+          <input type="checkbox" id="javascript" name="webdev_experience" value="JavaScript">
+          <label for="javascript">JavaScript</label><br>
+          <hr>
+          <label for="class_year">What year you are in:</label>
+          <select name="class_year" id="class_year">
+            <option value="freshman">Freshman</option>
+            <option value="sophmore">Sophmore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+          </select>
+          <br>
+          <label for="comment">Any Comments:</label><br>
+          <textarea name="comment" id="comment" rows="5" cols="50">
+            Please leave any comments here
+          </textarea><br>
+          <label for="best_soccer_player">Who is the best soccer player today?</label><br>
+          <input list="best_soccer_player">
+          <datalist id="best_soccer_player">
+            <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+            <option value="Lionel Messi">Lionel Messi</option>
+            <option value="Kylian Mbappe">Kylian Mbappe</option>
+            <option value="Neymar">Neymar</option>
+          </datalist>
+          <p>Date: </p>
+          <input type="date"><br><br>
+          <button type="button">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&#xA9 Copyright by No one</p>
+    </footer>
+  </body>
+</html>
