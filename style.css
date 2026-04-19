@@ -41,6 +41,15 @@ video, audio {
 footer{
   position: sticky;
   bottom: 0;
+} 
+
+.inline {
+  display: inline-block;
+}
+
+fieldset > div {
+  display: inline-block;
+  align-items: center;
 }
 
 button {
