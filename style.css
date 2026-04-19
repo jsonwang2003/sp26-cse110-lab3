@@ -38,6 +38,15 @@ video, audio {
   color: lightgrey;
 }
 
+.inline {
+  display: inline-block;
+}
+
+fieldset > div {
+  display: inline-block;
+  align-items: center;
+}
+
 button {
   width: auto;
   height: 30px;
