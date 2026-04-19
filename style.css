@@ -8,6 +8,14 @@
 
 /* Media styles */
 
+img {
+  margin: auto;
+}
+
+video, audio {
+  margin: auto;
+}
+
 /* general styles */
 
 * {
