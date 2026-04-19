@@ -39,7 +39,26 @@ video, audio {
 }
 
 button {
+  width: auto;
+  height: 30px;
   background-color: var(--secondary-color);
+  text-align: center;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  border: none;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+details:active{
+  cursor: pointer;
 }
 
 /* form */
