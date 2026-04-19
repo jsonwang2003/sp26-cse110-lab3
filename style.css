@@ -38,6 +38,11 @@ video, audio {
   color: lightgrey;
 }
 
+footer{
+  position: sticky;
+  bottom: 0;
+} 
+
 .inline {
   display: inline-block;
 }
