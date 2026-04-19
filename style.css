@@ -1,0 +1,9 @@
+/* variables*/
+:root {
+  --primary-color: #303030;
+  --secondary-color: hsl(37, 100%, 50%);
+}
+
+* {
+  background-color: var(--primary-color, --secondary-color);
+}
