@@ -4,15 +4,29 @@
   --secondary-color: hsl(37, 100%, 50%);
 }
 
+/* Imported fonts */
+
+/* Media styles */
+
+/* general styles */
+
 * {
   background-color: var(--primary-color, --secondary-color);
   color: lightgrey;
 }
 
+button {
+  background-color: var(--secondary-color);
+}
+
+/* form */
+
+/* text styles */
+
 h1 {
   color: color-mix(in lch increasing hue, hsl(0, 80%, 46%), coral)
 }
 
-button {
-  background-color: var(--secondary-color);
-}
+/* Flexbox Layouts */
+
+/* Grid Layouts */
