@@ -6,4 +6,9 @@
 
 * {
   background-color: var(--primary-color, --secondary-color);
+  color: lightgrey;
+}
+
+h1 {
+  color: color-mix(in lch increasing hue, hsl(0, 80%, 46%), coral)
 }
