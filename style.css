@@ -50,6 +50,13 @@ h1 {
   color: color-mix(in lch increasing hue, hsl(0, 80%, 46%), coral)
 }
 
+#due_date {
+  color: red;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-align: center;
+}
+
 /* Flexbox Layouts */
 
 /* Grid Layouts */
