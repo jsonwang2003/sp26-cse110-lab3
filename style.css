@@ -5,14 +5,29 @@
 }
 
 /* Imported fonts */
+.roboto-style {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 /* Media styles */
 
 img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  max-height: 1200px;
   margin: auto;
+  position: static;
 }
 
 video, audio {
+  display: block;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -23,8 +38,40 @@ video, audio {
   color: lightgrey;
 }
 
+footer{
+  position: sticky;
+  bottom: 0;
+} 
+
+.inline {
+  display: inline-block;
+}
+
+fieldset > div {
+  display: block;
+}
+
 button {
+  width: auto;
+  height: 30px;
   background-color: var(--secondary-color);
+  text-align: center;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  border: none;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+details:active{
+  cursor: pointer;
 }
 
 /* form */
@@ -35,6 +82,71 @@ h1 {
   color: color-mix(in lch increasing hue, hsl(0, 80%, 46%), coral)
 }
 
+#due_date {
+  color: red;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-align: center;
+}
+
 /* Flexbox Layouts */
+.flex-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.flex-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
 /* Grid Layouts */
+.grid-main-layout {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+}
+
+.grid-header-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 200px;
+}
+
+.grid-header-hero > * {
+  text-align: center;
+}
+
+.grid-form-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  align-items: start;
+}
+
+.grid-form-layout > button {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
