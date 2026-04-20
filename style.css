@@ -7,7 +7,6 @@
 /* Imported fonts */
 .roboto-style {
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 5;
   font-style: normal;
   font-variation-settings:
@@ -123,7 +122,7 @@ p.roboto-style {
 }
 
 h2:has(+ p){
-  color: --secondary-color;
+  color: var(--secondary-color);
   margin-bottom: 0;
 }
 
