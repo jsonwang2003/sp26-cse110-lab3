@@ -38,6 +38,21 @@ video, audio {
   color: lightgrey;
 }
 
+.inline {
+  display: inline-block;
+}
+
+.divider {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: white;
+}
+
+fieldset > div {
+  display: inline-block;
+  align-items: center;
+}
+
 footer{
   position: sticky;
   bottom: 0;
@@ -62,24 +77,53 @@ button {
   border-color: black;
   border-radius: 15px;
   border: none;
-}
-
-button:hover{
-  background-color: black;
-  color: white;
-  cursor: pointer;
+  
+  &:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 details:active{
   cursor: pointer;
 }
 
-/* form */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 
 /* text styles */
 
 h1 {
   color: color-mix(in lch increasing hue, hsl(0, 80%, 46%), coral)
+}
+
+section h3 {
+  color: teal;
+  text-decoration: underline;
+}
+
+h1 ~ h2 {
+  color: purple;
+  font-style: italic;
+}
+
+h2 + hr {
+  border-color: orange;
+  border-width: 4px;
+}
+
+p.roboto-style {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+
+h2:has(+ p){
+  color: --secondary-color;
+  margin-bottom: 0;
 }
 
 #due_date {
