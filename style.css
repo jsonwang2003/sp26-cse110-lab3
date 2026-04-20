@@ -48,8 +48,7 @@ footer{
 }
 
 fieldset > div {
-  display: inline-block;
-  align-items: center;
+  display: block;
 }
 
 button {
@@ -91,5 +90,63 @@ h1 {
 }
 
 /* Flexbox Layouts */
+.flex-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.flex-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
 /* Grid Layouts */
+.grid-main-layout {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+}
+
+.grid-header-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 200px;
+}
+
+.grid-header-hero > * {
+  text-align: center;
+}
+
+.grid-form-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  align-items: start;
+}
+
+.grid-form-layout > button {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
