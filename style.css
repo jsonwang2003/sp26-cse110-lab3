@@ -36,6 +36,7 @@ video, audio {
 * {
   background-color: var(--primary-color, --secondary-color);
   color: lightgrey;
+  font-size: 1.05em;
 }
 
 .inline {
